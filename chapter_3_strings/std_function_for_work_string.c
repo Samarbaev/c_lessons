@@ -24,7 +24,12 @@ int main() {
     int max_add = sizeof(source) - strlen(source) - 1;
 
     printf("concat = %s", strncat(source, concat, max_add));
-   
+    print_separator();
+    if(strcmp(source, dst) == 0) {
+        printf("source == dst");
+    } else {
+        printf("source != dst");
+    }
 }
 
 void print_separator() {
